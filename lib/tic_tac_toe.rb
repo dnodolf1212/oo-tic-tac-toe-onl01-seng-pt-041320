@@ -56,7 +56,7 @@ class TicTacToe
   end
   
   def won?
-    WIN_COMBINATIONS.each do |combo|
+    WIN_COMBINATIONS.detect(->{false}) do |win_combo|
       index_0 = combo[0]
       index_1 = combo[1]
       index_2 = combo[2]
@@ -65,7 +65,6 @@ class TicTacToe
       position_2 = @board[index_1]
       position_3 = @board[index_2]
       
-      WIN_COMBINATIONS.detect(->{false}) do |win_combo|
         if 
           @board[win_combo[0]] == "X" && @board[win_combo[1]] == "X" && @board[win_combo[2]] == "X"
        
