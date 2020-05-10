@@ -68,15 +68,15 @@ class TicTacToe
       WIN_COMBINATIONS.detect(->{false}) do |win_combo|
         if 
           @board[win_combo[0]] == "X" && @board[win_combo[1]] == "X" && @board[win_combo[2]] == "X"
-          combo
+          win_combo
         else
           @board[win_combo[0]] == "O" && @board[win_combo[1]] == "O" && @board[win_combo[2]] == "O"
-          combo
+          win_combo
           #binding.pry
         end
       end
     end
-    #false
+    false
   end
     
     
