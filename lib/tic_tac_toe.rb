@@ -70,13 +70,9 @@ class TicTacToe
        
         elsif
           @board[win_combo[0]] == "O" && @board[win_combo[1]] == "O" && @board[win_combo[2]] == "O"
-         
-          
-          #binding.pry
         end
       end
     end
-    false 
   end
     
     
