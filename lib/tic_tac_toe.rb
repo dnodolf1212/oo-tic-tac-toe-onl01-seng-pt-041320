@@ -111,4 +111,4 @@ class TicTacToe
 end
 
 tic_tac_toe = TicTacToe.new
-TicTacToe.play
+TicTacToe.turn
