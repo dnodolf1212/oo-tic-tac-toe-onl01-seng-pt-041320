@@ -73,16 +73,8 @@ class TicTacToe
         end
       end
     end
-  end
-    
-    
-      #if position_1 == "X" && position_2 == "X" && position_3 == "X"
-         #combo
-      #else position_1 == "O" && position_2 == "O" && position_3 == "O"
-            #combo
-          #end
-        #end
-      #end
+
+  
      
       
              
